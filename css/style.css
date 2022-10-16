@@ -16,9 +16,9 @@ nav ul{
     align-items:flex-end;
     font-size: 20px;
     font-family: monospace;
-    list-style: none;   
+    list-style: none; 
+    margin-bottom: 0;  
 }
-
 
 .navBar li a{
     text-decoration: none;
@@ -29,6 +29,8 @@ nav ul{
     background-color: rgba(0, 0, 128, 0.678) ;
     padding: 0px;
 }
+/*index.html*/
+
 .fondo{
     display: flex;
     width: 100%;
@@ -38,32 +40,50 @@ nav ul{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.fondo{
+    display: flex;
+    flex-direction: column;
+}
+.mapa{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 300px;
+    height: 200px;
+}
+.nuestrasTelas{
+color: transparent;
+}
 .contenedor{
     display: flex;
-    align-items:left;
-    justify-content: left;
-    width: 300px;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
     height: 40px;
     display: flex;
     color: rgb(255, 255, 255);
     font-size: 40px;
     line-height: 40px;
+    margin-top: 80px;
 
     overflow: hidden;
 }
+.animacion{
+    margin-bottom: 0;
+}
 .contenedor ul{
-    width: 300px;
+    margin-top: 30px;
+    width: 100%;
     height: 40px;
     list-style: none;
     padding-left: 10px;
     animation: cambiar 7s infinite;
 }
 @keyframes cambiar{
-    0%{margin-top: 0;}
-    20%{margin-top: 0;}
-    25%{margin-top: -40px;}
-    50%{margin-top: -40px;}
+    0%{margin-top: 40;}
+    20%{margin-top: 40;}
+    25%{margin-top: -80px;}
+    50%{margin-top: -80px;}
 }
 .text-focus-in{
     display: grid;
@@ -71,7 +91,7 @@ nav ul{
     grid-gap: 80px;
     font-size: 20px;
     font-family: monospace;
-    padding:50px 150px;
+    padding:50px 50px;
     color: white;
 }
 .text-focus-in {
@@ -114,18 +134,40 @@ nav ul{
       opacity: 1;
     }
   }
-  
+
+  /*tejidoPunto*/
+
 .fondotp{
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/fondotepu.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.tejidoPuntoTitulo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 30px;
+    font-size: x-large;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
 /*css carrousel*/
+.carrusel{
+    width: 800px;
+    height: 100vh;
+}
+.carousel{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 100vh;
+}
+
 .carousel-caption{
     background-color: #fff;
     color: black;
@@ -150,16 +192,20 @@ nav ul{
     text-align: center;
     font-size: 40px;
 }
+/*TejidoPlano*/
 
 .fondotepla{
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/fondotepla.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/*quienesSomos*/
+
 .fondoNosotros{
     display: flex;
     width: 100%;
@@ -169,6 +215,67 @@ nav ul{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.nosotrosSomos{
+    width: 100%;
+    height: 100vh;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: #fff;
+    font-family: monospace;
+    font-size: 100px;
+}
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+p{
+    color: rgb(194, 194, 194);
+    margin: 15px;
+    font-family: monospace;
+    font-size: 18px;
+    font-style: italic;
+    font-size-adjust: inherit;
+}
+
+.historia{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 100%;
+    margin: 15px;
+    justify-content:space-around;
+    text-shadow: rgb(19, 19, 19);
+}
+/*formulario*/
 
 .fondoContact{
     display: flex;
@@ -253,42 +360,28 @@ footer ul li{
         justify-items: center;
         border-radius: 10%;
     }
-    .fondo{
-        background-image: none;
-        background-color: rgb(145, 145, 145);
-    }
     .fotoLogo{
         width: 250px;
         height: 120px;
     }
-
+    .fondo{
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        background-color: black;
+    }
+    .nuestrasTelas{
+        display: flex;
+        justify-content: center;
+        color: aqua;
+        font-size: 30px;
+        margin-top: 40px;
+    }
     .contenedor{
-        display: flex;
-        align-items:left;
-        justify-content: left;
-        width: 300px;
-        height: 40px;
-        display: flex;
-        color: rgb(121, 3, 3);
-        font-size: 20px;
-        line-height: 40px;
-    
-        overflow: hidden;
+        font-size: 18px;
     }
-    .contenedor ul{
-        width: 300px;
-        height: 40px;
-        list-style: none;
-        padding-left: 10px;
-        animation: cambiar 7s infinite;
-        padding-bottom: 30px;
-    }
-    @keyframes cambiar{
-        0%{margin-top: 0;}
-        20%{margin-top: 0;}
-        25%{margin-top: -40px;}
-        50%{margin-top: -40px;}
-    }
+
+
     .text-focus-in{
         width: 100%;
         height: 100vh;
@@ -296,13 +389,13 @@ footer ul li{
         grid-template-columns: repeat(2,1fr);
         justify-content: center;
         align-items: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        padding-left: 100px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 40px;
         grid-gap: 20px;
-        font-size: 14px;
+        font-size: 16px;
         font-family: monospace;
-        color: rgb(21, 2, 56);
+        color: rgb(255, 255, 255);
     }
     .text-focus-in {
         -webkit-animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -332,6 +425,262 @@ footer ul li{
           opacity: 1;
         }
       }
+
+      .nosotrosSomos{
+        width: 100%;
+        height: 100vh;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: brown;
+        color: #fff;
+        font-family: monospace;
+        font-size: 50px;
+    }
+    .tracking-in-expand {
+        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+    
+     @-webkit-keyframes tracking-in-expand {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes tracking-in-expand {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      p{
+        color: rgb(194, 194, 194);
+        margin: 15px;
+        font-family: monospace;
+        font-size: 12px;
+        font-style: italic;
+        font-size-adjust: inherit;
+    }
+    
+    .historia{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin: 15px;
+        justify-content:space-around;
+    }
+
+    h2{ 
+        color: #fff;
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+        font-size: 25px;
+        font-family: monospace;
+        margin-bottom: 20px;
+    }
+    .mapa{
+        display:none
+    }
+
+
+
+
+    .formulario{
+        width: 450px;
+        margin: 15px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 50px 30px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        font-family: monospace;
+    }
+    .fondoContact{
+        display: flex;
+        width: 100%;
+        background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/contactenos.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(30, 30, 58);
+}
+}
+@media (max-width:768px){
+    .navBar{
+        width: 100%;
+        height: 50%;
+        padding: 40px;
+        display: grid;
+        font-size: 18px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        border-radius: 10%;
+    }
+    .fotoLogo{
+        width: 150px;
+        height: 80px;
+    }
+    .fondo{
+        display: flex;
+        flex-direction: column;
+    }
+    .nuestrasTelas{
+        display: flex;
+        justify-content: center;
+        color: aqua;
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        margin-top: 0;
+        margin: 15px;
+        width: auto;
+        height: 60px;
+    }
+
+
+    .text-focus-in{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        grid-gap: 20px;
+        font-size: 16px;
+        font-family: monospace;
+        color: rgb(255, 255, 255);
+    }
+    .text-focus-in {
+        -webkit-animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+     @-webkit-keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+      .nosotrosSomos{
+        width: 100%;
+        height: 100vh;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: brown;
+        color: #fff;
+        font-family: monospace;
+        font-size: 50px;
+    }
+    .tracking-in-expand {
+        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+    
+     @-webkit-keyframes tracking-in-expand {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes tracking-in-expand {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      p{
+        color: rgb(194, 194, 194);
+        margin: 15px;
+        font-family: monospace;
+        font-size: 16px;
+        font-style: italic;
+        font-size-adjust: inherit;
+    }
+    
+    .historia{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: 15px;
+        justify-content:space-around;
+    }
+
+    h2{ 
+        color: #fff;
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+        font-size: 35px;
+        font-family: monospace;
+        margin-bottom: 20px;
+    }
+    .mapa{
+        display: none;
+    }
+
 footer{
     display: flex;
     justify-content: center;
