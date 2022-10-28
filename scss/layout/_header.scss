@@ -1,0 +1,28 @@
+header{
+    background-color: black;
+
+img{
+    width: 400px;
+    height: 200px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end;
+    font-size: 20px;
+    font-family: monospace;
+    list-style: none; 
+    margin-bottom: 0;  
+}
+}
+.navBar li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px;
+
+&:hover{
+    background-color: rgba(0, 0, 128, 0.678) ;
+    padding: 0px;
+}
+}

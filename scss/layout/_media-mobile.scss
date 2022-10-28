@@ -1,0 +1,182 @@
+@media (max-width:576px){
+    .navBar{
+      @include props-flex;
+        width: 100%;
+        height: 50%;
+        padding: 40px;
+        flex-direction: column;
+        font-size: 18px;
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 10%;
+    }
+    .fotoLogo{
+        width: 250px;
+        height: 120px;
+    }
+    .fondo{
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        background-color: $background-principal;
+    }
+    .nuestrasTelas{
+        display: flex;
+        justify-content: center;
+        color: aqua;
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .contenedor{
+        font-size: 18px;
+    }
+  
+  
+    .text-focus-in{
+       @include props-width-heigh; 
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        grid-gap: 20px;
+        font-size: 16px;
+        font-family: monospace;
+        color: $color-texto-primario;
+    }
+    .text-focus-in {
+        -webkit-animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+     @-webkit-keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+  
+      .nosotrosSomos{
+        @include props-width-heigh;
+    h1{
+        @include props-flex;
+        background-color: $background-titulos;
+        color: #fff;
+        font-family: monospace;
+        font-size: 50px;
+    }
+  }
+    .tracking-in-expand {
+        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+    
+     @-webkit-keyframes tracking-in-expand {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes tracking-in-expand {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      p{
+        color: $color-texto-parrafo;
+        margin: 15px;
+        font-family: monospace;
+        font-size: 12px;
+        font-style: italic;
+        font-size-adjust: inherit;
+    }
+    
+    .historia{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin: 15px;
+        justify-content:space-around;
+    }
+  
+    h2{ 
+        color: $color-texto-primario;
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+        font-size: 25px;
+        font-family: monospace;
+        margin-bottom: 20px;
+    }
+    .mapa{
+        display:none
+    }
+  
+
+    
+    .carousel {
+      padding-left: 100px;
+      width: 500px;
+      justify-content: center;
+    }
+    
+  
+  
+    .formulario{
+        width: 450px;
+        margin: 15px;
+        color: $color-texto-primario;
+        background: $background-principal;
+        padding: 50px 30px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        font-family: monospace;
+    }
+
+    input, textarea {
+      margin-bottom: 0px;
+  }
+    .fondoContact{
+        @include props-fondo;
+        width: 100%;
+        background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/contactenos.jpg);
+    }
+  
+  footer{
+@include props-flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: $color-footer-mobile;
+  }
+  }

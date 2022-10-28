@@ -1,0 +1,75 @@
+.fondoNosotros{
+  @include props-fondo;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/fondonosotros.jpg);
+}
+
+.nosotrosSomos{
+  @include props-width-heigh;
+  
+h1{
+@include props-flex;
+    background-color: brown;
+    color:$color-texto-primario;
+    font-family: monospace;
+    font-size: 100px;
+}
+}
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+p{
+    color: $color-texto-parrafo;
+    margin: 15px;
+    font-family: monospace;
+    font-size: 22px;
+    font-style: italic;
+    font-size-adjust: inherit;
+}
+
+.historia{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "parrafo1 parrafo2";
+}
+
+.parrafo1{
+  grid-area: parrafo1;
+}
+.parrafo2{
+  grid-area: parrafo2;
+}
+
+.mapa{
+padding: 20px;
+flex-direction: row;
+@include props-flex;
+}

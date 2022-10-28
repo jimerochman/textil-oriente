@@ -1,0 +1,48 @@
+.fondoContact{
+@include props-fondo;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/contactenos.jpg);
+}
+.formulario{
+    width: 450px;
+    margin: 15px;
+    color: $color-texto-primario;
+    background: $background-principal;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-family: monospace;
+}
+h2{ 
+    color:$color-texto-primario;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    font-size: 40px;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    font-family: monospace;
+}
+textarea {
+min-height: 100px;
+max-height: 200px;
+max-width: 100%;
+}
+
+#boton{
+    background: rgb(6, 0, 95);
+    color: #fff;
+    padding: 20px;
+}
+#boton:hover {
+    cursor: pointer;
+}
+

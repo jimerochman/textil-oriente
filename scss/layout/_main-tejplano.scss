@@ -1,0 +1,6 @@
+.fondotepla{
+@include props-fondo
+height: auto;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/fondotepla.jpg);
+}

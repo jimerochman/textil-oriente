@@ -1,0 +1,64 @@
+.fondotp {
+    @include props-fondo
+    height: auto;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/fondotepu.jpg);
+  }
+  
+  .tejidoPuntoTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size: x-large;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  /*css carrousel*/
+  
+  .carrusel {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    padding-bottom: 10px;
+  }
+  
+  .carousel-caption {
+    background-color: #fff;
+    color: black;
+    font-family: monospace;
+    width: 300px;
+    height: 100px;
+    h5{
+      font-size: 15px;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+  
+  .carousel {
+    padding-left: 100px;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+  }
+  
+  .carousel-item {
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+  }
+  
+  .titulo {
+    @include props-flex;
+    font-size: 40px;
+  }
