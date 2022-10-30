@@ -20,7 +20,7 @@
     .nuestrasTelas{
         display: flex;
         justify-content: center;
-        color: aqua;
+        color: $color-texto-primario;
         font-size: 30px;
         margin-top: 40px;
     }
@@ -78,14 +78,14 @@
       }
       .nosotrosSomos{
         @include props-width-heigh;
-    }
     h1{
         @include props-flex;
-        background-color: brown;
+        background-color: $background-titulos;
         color: #fff;
         font-family: monospace;
         font-size: 50px;
     }
+  }
     .tracking-in-expand {
         -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
                 animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -116,35 +116,35 @@
         }
       }
       p{
-        color: rgb(194, 194, 194);
+        color: $color-texto-parrafo;
         margin: 15px;
+        padding: 10px;
         font-family: monospace;
-        font-size: 16px;
+        font-size: 20px;
         font-style: italic;
         font-size-adjust: inherit;
     }
     
     .historia{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+      flex-direction: column;
         width: 100%;
         margin: 15px;
         justify-content:space-around;
     }
-
+  
     h2{ 
-        color: #fff;
+        color: $color-texto-primario;
         justify-content: center;
         text-align: center;
         margin: 30px;
-        font-size: 35px;
+        font-size: 25px;
         font-family: monospace;
         margin-bottom: 20px;
     }
     .mapa{
-        display: none;
+        display:none
     }
-
 footer{
     display: flex;
     justify-content: center;

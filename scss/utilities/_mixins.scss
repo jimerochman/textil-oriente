@@ -9,8 +9,8 @@
     height: 100vh;   
 }
 
-@mixin flex($display,$back-position, $back-repeat, $back-size, $ancho, $height){
-    display: $dis;
+@mixin props-fondo ($display,$back-position, $back-repeat, $back-size, $ancho, $height){
+    display: $display;
     background-position: $back-position;
     background-repeat: $back-repeat;
     background-size: $back-size;
