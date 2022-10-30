@@ -71,5 +71,5 @@ p{
 .mapa{
 padding: 20px;
 flex-direction: row;
-@include props-flex;
+@include flex (flex, center, no-repeat, cover);
 }
