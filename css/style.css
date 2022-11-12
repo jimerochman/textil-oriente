@@ -328,7 +328,7 @@ textarea {
   cursor: pointer; }
 
 footer {
-  background-color: #a7a7a7;
+  background-color: #1e1e3a;
   color: #c2c2c2;
   display: flex;
   justify-content: space-between;
@@ -461,13 +461,13 @@ footer {
   /*tejido punto tablet**/
   .fondotp {
     width: 768px;
-    height: 280vh;
+    height: 310vh;
     flex-direction: column;
     background-image: url(../assets/fondotepu.jpg); }
   /*tejido plano tablet**/
   .fondotepla {
     width: 768px;
-    height: 280vh;
+    height: 310vh;
     flex-direction: column; }
   .cards img {
     width: 280px;
@@ -639,12 +639,12 @@ footer {
   /*tejido punto mobile**/
   .fondotp {
     width: 576px;
-    height: 520vh;
+    height: 580vh;
     flex-direction: column; }
   /*tejido plano mobile**/
   .fondotepla {
     width: 576px;
-    height: 520vh;
+    height: 580vh;
     flex-direction: column; }
   .imagenesPlano {
     justify-items: center; }
