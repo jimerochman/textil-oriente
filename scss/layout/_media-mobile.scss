@@ -193,7 +193,7 @@
       margin-bottom: 0px;
   }
     .fondoContact{
-      @include props-fondo(flex, center, no-repeat, cover,100%,120vh);
+      @include props-fondo(flex, center, no-repeat, cover,100%,150vh);
         background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/contactenos.jpg);
     }
   
