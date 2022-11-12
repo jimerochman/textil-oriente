@@ -25,6 +25,16 @@ header {
     background-color: rgba(0, 0, 128, 0.678);
     padding: 0px; }
 
+.listaTelas ul {
+  column-count: 3; }
+
+.listaTelas ul li {
+  margin: 15px;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none; }
+
 .fondo {
   display: flex;
   background-position: center;
@@ -38,7 +48,11 @@ header {
   flex-direction: column; }
 
 .nuestrasTelas {
-  color: transparent; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: brown; }
 
 .contenedor {
   display: flex;
@@ -68,9 +82,6 @@ header {
     margin-top: -80px; } }
 
 .text-focus-in {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 80px;
   font-size: 20px;
   font-family: monospace;
   padding: 50px 50px;
@@ -111,6 +122,11 @@ header {
     filter: blur(0px);
     opacity: 1; } }
 
+.contactList {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column; }
+
 .fondoNosotros {
   display: flex;
   background-position: center;
@@ -131,6 +147,8 @@ header {
     color: white;
     font-family: monospace;
     font-size: 100px; }
+  .nosotrosSomos .textil1 {
+    color: white; }
 
 .tracking-in-expand {
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -201,64 +219,70 @@ p {
   color: #fff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
-/*css carrousel*/
-.carrusel {
-  width: 500px;
-  height: 500px; }
-
-.carousel {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  height: 500px;
-  padding-bottom: 10px; }
-
-.carousel-caption {
-  background-color: #fff;
-  color: black;
-  font-family: monospace;
-  width: 300px;
-  height: 100px; }
-  .carousel-caption h5 {
-    font-size: 15px; }
-  .carousel-caption p {
-    font-size: 12px; }
-
-.carousel {
-  padding-left: 100px;
-  width: 500px;
-  height: 500px;
-  justify-content: center; }
-
-.carousel-item {
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 500px; }
-
-.titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px; }
-
 .fondotepla {
   display: flex;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100 .fondotepla;
-  height: 100vh;
+  height: 150vh;
   height: auto;
   flex-direction: column;
   background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/fondotepla.jpg); }
+
+h1 {
+  background-color: brown; }
+
+h2 {
+  color: black; }
+
+.imagenesPlano {
+  width: 100%;
+  max-width: 1200px;
+  height: 150vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
+  .imagenesPlano .cards {
+    width: 350px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding-top: 10px;
+    margin: 40px;
+    text-align: center;
+    transition: all 0.25s; }
+  .imagenesPlano .cards:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+  .imagenesPlano img {
+    width: 330px;
+    height: 280px;
+    margin-top: 10px; }
+  .imagenesPlano h4 {
+    font-family: monospace;
+    color: black;
+    margin-top: 5px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px; }
+  .imagenesPlano h5 {
+    color: black;
+    background-color: aliceblue;
+    padding: 15px;
+    font-family: monospace;
+    border-radius: 10px; }
 
 .fondoContact {
   display: flex;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100 .fondoContact;
+  width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/contactenos.jpg); }
 
@@ -266,7 +290,7 @@ p {
   width: 450px;
   margin: 15px;
   color: white;
-  background: black;
+  background: #a7a7a7;
   padding: 50px 30px;
   box-sizing: border-box;
   border-radius: 7px;
@@ -304,7 +328,7 @@ textarea {
   cursor: pointer; }
 
 footer {
-  background-color: black;
+  background-color: #a7a7a7;
   color: #c2c2c2;
   display: flex;
   justify-content: space-between;
@@ -354,8 +378,7 @@ footer {
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 30px;
-    margin-top: 40px; }
+    font-size: 30px; }
   .contenedor {
     display: flex;
     justify-content: center;
@@ -368,8 +391,6 @@ footer {
   .text-focus-in {
     width: 100%;
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     padding-top: 30px;
@@ -431,18 +452,44 @@ footer {
     100% {
       opacity: 1; } }
   p {
-    color: #c2c2c2;
-    margin: 15px;
+    color: white;
     padding: 10px;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 14px;
     font-style: italic;
     font-size-adjust: inherit; }
+  /*tejido punto tablet**/
+  .fondotp {
+    width: 768px;
+    height: 280vh;
+    flex-direction: column;
+    background-image: url(../assets/fondotepu.jpg); }
+  /*tejido plano tablet**/
+  .fondotepla {
+    width: 768px;
+    height: 280vh;
+    flex-direction: column; }
+  .cards img {
+    width: 280px;
+    height: 230px;
+    margin-top: 10px; }
+  .imagenesPlano {
+    width: 100%;
+    max-width: 730px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+    .imagenesPlano .cards {
+      width: 300px;
+      height: 380px; }
+      .imagenesPlano .cards h4 {
+        color: brown; }
+      .imagenesPlano .cards h5 {
+        color: #524c4c; }
   .historia {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 15px;
     justify-content: space-around; }
   h2 {
     color: white;
@@ -454,12 +501,24 @@ footer {
     margin-bottom: 20px; }
   .mapa {
     display: none; }
+  .fondoContact {
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    height: 120vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/contactenos.jpg); }
   footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color: #1e1e3a; } }
+    background-color: #1e1e3a; }
+    footer ul li {
+      justify-content: start; } }
 
 @media (max-width: 576px) {
   .navBar {
@@ -480,14 +539,13 @@ footer {
     display: flex;
     flex-direction: column;
     background-image: none;
-    background-color: black; }
+    background-color: #a7a7a7; }
   .nuestrasTelas {
     display: flex;
     justify-content: center;
     background-color: brown;
     color: white;
-    font-size: 30px;
-    margin-top: 40px; }
+    font-size: 30px; }
   .contenedor {
     font-size: 18px; }
   .text-focus-in {
@@ -556,8 +614,8 @@ footer {
     100% {
       opacity: 1; } }
   p {
-    color: #c2c2c2;
-    margin: 15px;
+    color: white;
+    border-color: black;
     padding: 10px;
     font-family: monospace;
     font-size: 14px;
@@ -567,8 +625,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 15px;
-    justify-content: space-around; }
+    justify-content: center; }
   h2 {
     color: white;
     justify-content: center;
@@ -579,15 +636,37 @@ footer {
     margin-bottom: 20px; }
   .mapa {
     display: none; }
-  .carousel {
-    padding-left: 100px;
-    width: 500px;
-    justify-content: center; }
+  /*tejido punto mobile**/
+  .fondotp {
+    width: 576px;
+    height: 520vh;
+    flex-direction: column; }
+  /*tejido plano mobile**/
+  .fondotepla {
+    width: 576px;
+    height: 520vh;
+    flex-direction: column; }
+  .imagenesPlano {
+    justify-items: center; }
+    .imagenesPlano .cards h4 {
+      color: brown; }
+    .imagenesPlano h5 {
+      color: #524c4c; }
+    .imagenesPlano img {
+      width: 280px;
+      height: 230px;
+      margin-top: 10px; }
+  .imagenesPlano {
+    width: 100%;
+    max-width: 576px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr); }
   .formulario {
     width: 450px;
     margin: 15px;
     color: white;
-    background: black;
+    background: #a7a7a7;
     padding: 50px 30px;
     box-sizing: border-box;
     border-radius: 7px;
@@ -599,9 +678,8 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100 .fondoContact;
-    height: 100vh;
     width: 100%;
+    height: 120vh;
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/contactenos.jpg); }
   footer {
     display: flex;

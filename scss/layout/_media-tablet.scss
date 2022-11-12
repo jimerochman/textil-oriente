@@ -22,7 +22,6 @@
         justify-content: center;
         color: $color-texto-primario;
         font-size: 30px;
-        margin-top: 40px;
     }
     .contenedor{
         @include props-flex;
@@ -36,8 +35,6 @@
 
     .text-focus-in{
         @include props-width-heigh;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
         justify-content: center;
         align-items: center;
         padding-top: 30px;
@@ -116,20 +113,55 @@
         }
       }
       p{
-        color: $color-texto-parrafo;
-        margin: 15px;
+        color:white;
         padding: 10px;
         font-family: monospace;
-        font-size: 20px;
+        font-size: 14px;
         font-style: italic;
         font-size-adjust: inherit;
     }
-    
+
+        /*tejido punto tablet**/
+        .fondotp{
+          width: 768px;
+          height: 280vh;
+          flex-direction: column;
+          background-image: url(../assets/fondotepu.jpg)
+      }
+
+        /*tejido plano tablet**/
+    .fondotepla {
+      width: 768px;
+      height: 280vh;
+      flex-direction: column;
+    }
+    .cards img{
+      width: 280px;
+      height: 230px;
+      margin-top: 10px;
+  }
+    .imagenesPlano{
+      width: 100%;
+      max-width: 730px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) ;
+      grid-template-rows: repeat(3, 1fr);
+      .cards{
+        width: 300px;
+        height: 380px;
+        h4{
+          color: brown;
+        }
+        h5{
+          color: rgb(82, 76, 76);
+        }
+      }
+}
+
     .historia{
         display: flex;
       flex-direction: column;
         width: 100%;
-        margin: 15px;
         justify-content:space-around;
     }
   
@@ -145,11 +177,20 @@
     .mapa{
         display:none
     }
+    .fondoContact{
+      @include props-fondo(flex, center, no-repeat, cover, 100%, 120vh);
+      height: 120vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/contactenos.jpg);
+  }
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     background-color: rgb(30, 30, 58);
+    ul li{
+      justify-content: start;
+    }
 }
 }

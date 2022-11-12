@@ -25,7 +25,6 @@
         background-color: brown;
         color:$color-texto-primario;
         font-size: 30px;
-        margin-top: 40px;
     }
     .contenedor{
         font-size: 18px;
@@ -115,8 +114,8 @@
         }
       }
       p{
-        color: $color-texto-parrafo;
-        margin: 15px;
+        color: white;
+        border-color: black;
         padding: 10px;
         font-family: monospace;
         font-size: 14px;
@@ -128,8 +127,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 15px;
-        justify-content:space-around;
+        justify-content:center;
     }
   
     h2{ 
@@ -144,16 +142,41 @@
     .mapa{
         display:none
     }
-  
 
-    
-    .carousel {
-      padding-left: 100px;
-      width: 500px;
-      justify-content: center;
+    /*tejido punto mobile**/
+    .fondotp{
+      width: 576px;
+      height: 520vh;
+      flex-direction: column;
     }
-    
-  
+    /*tejido plano mobile**/
+    .fondotepla {
+      width: 576px;
+      height: 520vh;
+      flex-direction: column;
+    }
+    .imagenesPlano{
+      justify-items: center;
+    .cards h4{
+      color:brown;
+    }
+    h5{
+      color: rgb(82, 76, 76);
+    }
+    img{
+      width: 280px;
+      height: 230px;
+      margin-top: 10px;
+  }
+}
+    .imagenesPlano{
+      width: 100%;
+      max-width:576px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr) ;
+      grid-template-rows: repeat(6, 1fr);
+}
+
   
     .formulario{
         width: 450px;
@@ -170,8 +193,7 @@
       margin-bottom: 0px;
   }
     .fondoContact{
-      @include props-fondo(flex, center, no-repeat, cover,100&,100vh);
-        width: 100%;
+      @include props-fondo(flex, center, no-repeat, cover,100%,120vh);
         background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../assets/contactenos.jpg);
     }
   
