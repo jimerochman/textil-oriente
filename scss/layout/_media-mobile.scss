@@ -14,6 +14,7 @@
         height: 120px;
     }
     .fondo{
+      width: 100%;
         display: flex;
         flex-direction: column;
         background-image: none;
@@ -145,14 +146,14 @@
 
     /*tejido punto mobile**/
     .fondotp{
-      width: 576px;
-      height: 580vh;
+      width: 100%px;
+      height: 530vh;
       flex-direction: column;
     }
     /*tejido plano mobile**/
     .fondotepla {
-      width: 576px;
-      height: 580vh;
+      width: 100%;
+      height: 530vh;
       flex-direction: column;
     }
     .imagenesPlano{
