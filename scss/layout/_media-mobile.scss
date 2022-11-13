@@ -146,13 +146,15 @@
 
     /*tejido punto mobile**/
     .fondotp{
-      width: 100%px;
+      width: 100%;
+      max-width: 576px;
       height: 530vh;
       flex-direction: column;
     }
     /*tejido plano mobile**/
     .fondotepla {
       width: 100%;
+      max-width: 576px;
       height: 530vh;
       flex-direction: column;
     }
