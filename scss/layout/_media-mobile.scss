@@ -130,7 +130,9 @@
         width: 100%;
         justify-content:center;
     }
-  
+  h1{
+    width: 576px;
+  }
     h2{ 
         color: $color-texto-primario;
         justify-content: center;
@@ -146,20 +148,19 @@
 
     /*tejido punto mobile**/
     .fondotp{
-      width: 100%;
-      max-width: 576px;
+      width: 576px;
       height: 530vh;
       flex-direction: column;
     }
     /*tejido plano mobile**/
     .fondotepla {
-      width: 100%;
-      max-width: 576px;
+      width: 576px;
       height: 530vh;
       flex-direction: column;
     }
     .imagenesPlano{
       justify-items: center;
+      width: 576px;
     .cards h4{
       color:brown;
     }
@@ -173,8 +174,6 @@
   }
 }
     .imagenesPlano{
-      width: 100%;
-      max-width:576px;
       display: grid;
       grid-template-columns: repeat(1, 1fr) ;
       grid-template-rows: repeat(6, 1fr);
