@@ -131,7 +131,7 @@
         justify-content:center;
     }
   h1{
-    width: 576px;
+    width: 100vw,
   }
     h2{ 
         color: $color-texto-primario;
@@ -148,19 +148,19 @@
 
     /*tejido punto mobile**/
     .fondotp{
-      width: 576px;
+      width: 100vw;
       height: 530vh;
       flex-direction: column;
     }
     /*tejido plano mobile**/
     .fondotepla {
-      width: 576px;
+      width: 100vw;
       height: 530vh;
       flex-direction: column;
     }
     .imagenesPlano{
       justify-items: center;
-      width: 576px;
+      width: 100vw;
     .cards h4{
       color:brown;
     }
