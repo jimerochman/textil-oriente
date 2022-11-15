@@ -1,13 +1,16 @@
 @media (max-width:576px){
     .navBar{
       @include props-flex;
-        width:576px;
+        width:100%;
         height: 50%;
         padding: 40px;
         flex-direction: column;
         font-size: 18px;
         grid-template-columns: repeat(1, 1fr);
         border-radius: 10%;
+    }
+    body{
+      overflow-x: none;
     }
     .fotoLogo{
         width: 250px;
@@ -200,7 +203,7 @@
     }
   
   footer{
-    width: 576px;
+    width: 100%;
     height: 100vh;
     flex-direction: column;
     padding: 10px;
